@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    text-align: center;
+    background-color: rgb(223, 234, 241);
+    font-family: 'Poppins', sans-serif;
+}
+.main h1{
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+.main hr{
+    width: 3rem;
+    border: 2px solid darkgoldenrod;
+    margin: 0 auto;
+    border-radius: 5rem;
+}
+.list-btn button{
+    border: 2px solid darkgoldenrod;
+    background-color: transparent;
+    color: darkgoldenrod;
+    border-radius: 5px;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+    text-transform: capitalize;
+}
+.list-btn button:hover{
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+.items{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-top: 1.5rem;
+}
+.item-container{
+    width: 25rem;
+    margin: 0.5rem;
+    display: flex;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+.img-div{
+    height: 7rem;
+    width: 9rem;
+    border: 2px solid darkgoldenrod;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.img-div img{
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.description-div{
+    width: 16rem;
+    height: 100%;
+    margin-left: 0.5rem;
+    text-align: left;
+}
+.description-div .head{
+    height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    border-bottom: 1px solid rgb(188, 188, 218);
+}
+.description-div h5{
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+.description-div h4{
+    color: darkgoldenrod;
+}
+.description-div p {
+    padding: 0.2rem 0.5rem;
+    margin: 0;
+    color: rgb(126, 124, 124);
+    font-size: 0.8rem;
+}
+
+.modal{
+    width: 400px;
+    background-color: #fff;
+    border: darkgoldenrod 2px solid;
+    border-radius: 0.5rem;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    margin: auto;
+    margin-left: -200px;
+    display: block;
+    text-align: center;
+    padding: 2rem 0.1rem;
+}
+.btn-close{
+    position: absolute;
+    top: 1%;
+    left: 93%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    color: darkgoldenrod;
+    font-size: large;
+}
+
+.modal-item-container{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.modal-img {
+    height: 10rem;
+    width: 16rem;
+    border: 2px solid darkgoldenrod;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: auto;
+}
+.modal-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.modal-desc{
+    width: 100%;   
+}
+.modal-desc h5{
+    margin: 0.5rem auto;
+    font-size: larger;
+    color: darkgoldenrod;
+    text-decoration: underline;
+}
+.modal-desc h4{
+    margin: 0.5rem auto;
+    font-size: large;
+    color: green;
+}
+.modal-desc h4 span{
+    margin: 0.5rem auto;
+    font-size: medium;
+    color: rgb(255, 0, 0);
+    text-decoration: line-through;
+}
+.modal-desc button{
+    border: 2px solid darkgoldenrod;
+    border-radius: 2rem;
+    height: 40px;
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: darkgoldenrod;
+    font-size: larger;
+    font-weight: 600;
+}
+.modal-desc button:hover{
+    color: white;
+    background-color: darkgoldenrod;
+}
+.modal-desc p {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    color: rgb(146, 128, 26);
+    font-size: medium;
+
+}
+.hidden{
+    display: none;
+}
+
+#checkout{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#checkout img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+#cart-value{
+    position: absolute;
+    left: 50%;
+    z-index: 5;
+    color: white;
+    background-color: red;
+    margin: 0 auto;
+    padding: 0 0.21rem;
+    border-radius: 5rem;
+    font-size: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.checkout-container{
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 80vw;
+    padding: 2rem 0.8rem;
+    max-width: 420px;
+    background-color: white;
+    border: 2px solid darkgoldenrod;
+    border-radius: 5px;
+}
+.checkout-container .checkout-items{
+    display: flex;
+    width: 90%;
+    margin: 0.1rem auto;
+    
+}
+.checkout-items h5 {
+    width: 50%;
+    text-align: left;
+    margin: 0.5rem auto;
+}
+.checkout-items p {
+    width: 15%;
+    text-align: left;
+    margin: 0.5rem auto;
+}
+.checkout-items h4 {
+    width: 15%;
+    text-align: left;
+    margin: 0.5rem auto;
+}
+.checkout-items button {
+    width: 10%;
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    margin: 0.5rem auto;
+    color: darkgoldenrod;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#pay{
+    border: 2px solid darkgoldenrod;
+    border-radius: 2rem;
+    height: 40px;
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: darkgoldenrod;
+    font-size: larger;
+    font-weight: 600;
+}
+#pay:hover{
+    color: white;
+    background-color: darkgoldenrod;
+}
+
+#close-checkout{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    border: none;
+    background-color: transparent;
+    color: darkgoldenrod;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.checkout-container h1{
+    color: darkgoldenrod;
+    margin: 0.5rem auto;
+}
+
+.checkout-container hr{
+    width: 90%;
+    border: 1px solid darkgoldenrod;
+}
+
+
+
